@@ -15,7 +15,7 @@ let arr = title.split(/\W/);
 console.log(arr);
 let lowerCaseArr = arr
 .filter(word => word !=='') //Could have used trim() function here. 
-.map(word => word.toLowerCase());
+.map(word => word.toLowerCase()); //Can apply this function directly to string then split instead of this order. 
 return lowerCaseArr.join('-');
 }
 // Only change code above this line
