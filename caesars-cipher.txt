@@ -1,0 +1,96 @@
+function rot13(str) {
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const alphabetArr = alphabet.split('');
+  const inputArr = str.split('');
+  let secretArr = [];
+  const shiftNum = 13;
+  for(let i = 0; i<inputArr.length; i++){
+    switch(inputArr[i]){
+      case 'A':
+        secretArr.push(alphabetArr[0+shiftNum]);
+        break;
+      case 'B':
+        secretArr.push(alphabetArr[1+shiftNum]);
+        break;
+      case 'C':
+        secretArr.push(alphabetArr[2+shiftNum]);
+        break;
+      case 'D':
+        secretArr.push(alphabetArr[3+shiftNum]);
+        break;
+      case 'E':
+        secretArr.push(alphabetArr[4+shiftNum]);
+        break;
+      case 'F':
+        secretArr.push(alphabetArr[5+shiftNum]);
+        break;
+      case 'G':
+        secretArr.push(alphabetArr[6+shiftNum]);
+        break;
+      case 'H':
+        secretArr.push(alphabetArr[7+shiftNum]);
+        break;
+      case 'I':
+        secretArr.push(alphabetArr[8+shiftNum]);
+        break;
+      case 'J':
+        secretArr.push(alphabetArr[9+shiftNum]);
+        break;
+      case 'K':
+        secretArr.push(alphabetArr[10+shiftNum]);
+        break;
+      case 'L':
+        secretArr.push(alphabetArr[11+shiftNum]);
+        break;
+      case 'M':
+        secretArr.push(alphabetArr[12+shiftNum]);
+        break;
+      case 'N':
+        secretArr.push(alphabetArr[13+shiftNum]);
+        break;
+      case 'O':
+        secretArr.push(alphabetArr[14+shiftNum]);
+        break;
+      case 'P':
+        secretArr.push(alphabetArr[15+shiftNum]);
+        break;
+      case 'Q':
+        secretArr.push(alphabetArr[16+shiftNum]);
+        break;
+      case 'R':
+        secretArr.push(alphabetArr[17+shiftNum]);
+        break;
+      case 'S':
+        secretArr.push(alphabetArr[18+shiftNum]);
+        break;
+      case 'T':
+        secretArr.push(alphabetArr[19+shiftNum]);
+        break;
+      case 'U':
+        secretArr.push(alphabetArr[20+shiftNum]);
+        break;
+      case 'V':
+        secretArr.push(alphabetArr[21+shiftNum]);
+        break;
+      case 'W':
+        secretArr.push(alphabetArr[22+shiftNum]);
+        break;
+      case 'X':
+        secretArr.push(alphabetArr[23+shiftNum]);
+        break;
+      case 'Y':
+        secretArr.push(alphabetArr[24+shiftNum]);
+        break;
+      case 'Z':
+        secretArr.push(alphabetArr[25+shiftNum]);
+        break;
+      default:
+        secretArr.push(inputArr[i]);
+        break;
+    }
+  }
+   let secretMessage = secretArr.join('');
+  return secretMessage;
+}
+
+console.log(rot13("SERR PBQR PNZC"));
