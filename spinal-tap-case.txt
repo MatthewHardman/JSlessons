@@ -1,0 +1,9 @@
+function spinalCase(str) {
+
+  let strArr = str.split(/\W|_|(?=[A-Z])/g);
+  let spinalTapStr = strArr.join('-')
+
+  return spinalTapStr.toLowerCase();
+}
+
+console.log(spinalCase('AllThe-small Things'));
