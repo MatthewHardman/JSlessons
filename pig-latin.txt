@@ -1,0 +1,17 @@
+function translatePigLatin(str) {
+  
+  const regex = /^[^aeiou]+/
+  let tempStr = '';
+  let pigLatin = str + 'way';
+
+
+  if(regex.test(str)){
+    let consonantStr = str.match(regex);
+    tempStr = str.replace(regex,'')
+    pigLatin = tempStr + consonantStr +'ay';
+  }
+   
+  return pigLatin;
+}
+
+console.log(translatePigLatin("california"));
