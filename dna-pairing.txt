@@ -1,0 +1,26 @@
+function pairElement(str) {
+  const strArr = str.split('');
+  let answerArr = [];
+  for(let i =0; i<strArr.length; i++){
+    switch (strArr[i]){
+      case 'A':
+        answerArr.push(['A','T']);
+        break;
+      case 'T':
+        answerArr.push(['T','A']);
+        break;
+      case 'C':
+        answerArr.push(['C','G']);
+        break;
+      case 'G':
+        answerArr.push(['G','C']);
+        break;
+      default:
+        console.log("improper input")
+    }
+  }
+   
+  return answerArr;
+}
+
+console.log(pairElement("GCG"));
